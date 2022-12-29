@@ -1,11 +1,11 @@
+$fz: 14px;
+$ff: Montserrat;
+
 //обнуляємо стилі браузеру
 @import "_null";
 
 //Підключаю шрифти з файлу 'dist/fonts.scss'
 @import "fonts";
-
-//Подключаео шрифти з файлу 'dist/_global.scss'
-@import "_global";
 
 body {
    font-family: $ff;
@@ -17,4 +17,4 @@ body {
 @import "_header";
 @import "_burger";
 @import "_content";
-@import "_footer";
+//@import "_footer";

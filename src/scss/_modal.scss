@@ -1,20 +1,23 @@
+$color: white;
+$background: #b7f7f37e;
+
 .modal{
    position: fixed;
    top: 100%;
-   //left: 50%;
-   //transform: translate(-50%, -50%);
-   z-index: 999;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
    width: 100vw;
    height: 100vh;
-
-   @include flexMix();
 
    padding: 4%;
    
    background-color: rgba(64, 62, 59, 0.85);
    backdrop-filter: blur(3px);
    
+   z-index: 999;
    //! border: 6px solid transparent;
    //! background-clip: padding-box;
 
@@ -36,7 +39,10 @@
       position: absolute;
       top: 0;
       right: 0;
-      @include flexMix();
+      
+      isplay: flex;
+      justify-content: center;
+      align-items: center;
       //flex-direction: column;
 
       width: 25px;
@@ -48,7 +54,7 @@
       //font-size: 14px;
       //text-transform: uppercase;s
       
-      color: $colorWhite;
+      color: $color;
       
       cursor: pointer;
       &::before, &::after{
@@ -79,7 +85,7 @@
    font-size: 18px;
    line-height: normal;
 
-   color: $colorWhite;
-   background: $colorContent;
+   color: $color;
+   background: $background;
   
 }

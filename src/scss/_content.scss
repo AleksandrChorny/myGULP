@@ -1,10 +1,13 @@
+$background: #b7f7f37e;
+$color: #4170b4;
+
 .content {
    text-align: center;
    font-size: inherit;
-   background-color: $colorContent;
+   background-color: $background;
    h1{
       text-align: center;
-      color: $colorBlue;
+      color: $color;
       font-size: 2em;
    }
    h3 {
