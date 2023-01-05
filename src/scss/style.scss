@@ -1,20 +1,24 @@
-$fz: 14px;
-$ff: Montserrat;
-
 //обнуляємо стилі браузеру
 @import "_null";
 
-//Підключаю шрифти з файлу 'dist/fonts.scss'
+//include fonts from file 'dist/fonts.scss'
 @import "fonts";
+
+$fz: 14px;
+$ff: Montserrat;
 
 body {
    font-family: $ff;
    font-size: $fz;
 }
 
-//Підключаємо стилі сторніки сайту
-@import "_modal";
-@import "_header";
-@import "_burger";
-@import "_content";
-//@import "_footer";
+//include file _modal.scss
+//! @import "_modal";
+//include file _header.scss
+//! @import "_header";
+//include file _burger.scss
+//! @import "_burger";
+//include file _content.scss
+//! @import "_content";
+//include file _form.scss
+@import "_form";

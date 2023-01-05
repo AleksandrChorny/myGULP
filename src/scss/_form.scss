@@ -1,0 +1,44 @@
+.registration {
+   display: grid;
+   grid-template-columns: 140px 500px 660px 140px;
+   align-content: center;
+
+   width: 1440px;
+   height: 1024px;
+   @media (min-width: 1441px) {
+      grid-template-columns: 1fr 500px 660px 1fr;
+      width: 100%;
+      height: 100%;
+   }
+   &__cover {
+      grid-column: 2;
+      width: 500px;
+      height: 790px;
+
+      background: #084B3E;
+      border-radius: 50px 0px 0px 50px;
+   }
+   &__form {
+      grid-column: 3;
+      width: 660px;
+      height: 790px;
+
+      background: #FFFFFF;
+      border-radius: 0 50px 50px 0;
+   }
+   &__txt {
+      font-family: 'Campton';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 39px;
+      line-height: 45px;
+      /* or 115% */
+
+      letter-spacing: -1px;
+
+      color: #F9E2BA;
+   }
+}
+.logo {
+
+}

@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- include file html/head.html and add him title -->
 @@include('html/head.html',{
-"title": "Главная"
+"title": "My GULP"
 })
 
 <body>
-   @@include('html/modal.html',{})
-   @@include('html/header.html',{})
-   @@include('html/content.html',{})
+   <!--This is a project to implement a component approach to website development. The component approach also applies to
+   css and html and javascript files.
+   Thanks to this approach, you can divide the page into modules (for example, header, footer, banner, slider, etc.) and
+   collect other pages from these modules. This gives incredible ease in the future support of the site. Since it is no
+   longer necessary to search for the desired class in an endless css file, in order to edit the desired element, it is
+   enough to open a small file where it is located.<br>
+   <br>
+   Simply enable and disable the required modules in the main files.<br>
+   <br>
+   index.html<br>
+   <br>
+   /scss/style.scss<br>
+   <br>
+   /js/app.js<br>
+   <br>
+   <br>
+   <br>-->
+
+   <!-- include file html/modal.html -->
+   <!--@@include('html/modal.html',{})-->
+   <!-- include file html/navigation.html' -->
+   <!--@@include('html/navigation.html',{})-->
+   <!-- include file html/modal.html -->
+   <!--@@include('html/header.html',{})-->
+   <!-- include file html/modal.html -->
+   <!--@@include('html/content.html',{})-->
+   <!-- include file html/form.html -->
+   @@include('html/form.html',{})
+
+
    <script src="js/app.min.js"></script>
 </body>
 

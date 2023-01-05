@@ -3,7 +3,7 @@ import fonter from 'gulp-fonter-fix';
 import ttf2woff2 from 'gulp-ttf2woff2';
 
 export const otfToTtf = () => {
-   //Ищем файлі фильтроф
+   //Ищем файлі фильтров
    return app.gulp.src(`${app.path.srcFolder}/fonts/*.otf`, {})
       .pipe(app.plugins.plumber(
          app.plugins.notify.onError({
@@ -17,6 +17,7 @@ export const otfToTtf = () => {
       }))
       //Выгружаем в исходную папку
       .pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/`))
+   die();
 }
 
 export const ttfToWoff = () => {
