@@ -1,32 +1,71 @@
 .registration {
    display: grid;
-   grid-template-columns: 140px 500px 660px 140px;
+   grid-template-columns: 1fr min-content  min-content 1fr;
    align-content: center;
 
-   width: 1440px;
-   height: 1024px;
-   @media (min-width: 1441px) {
-      grid-template-columns: 1fr 500px 660px 1fr;
-      width: 100%;
-      height: 100%;
+   width: 100%;
+
+   padding: 116px 0;
+
+   overflow: hidden;
+   @media (max-width: 1200px) {
+      padding: 60px 0;
+   }
+   @media (max-width: 660px) {
+      grid-template-columns: 1fr min-content 1fr;
+      grid-template-rows:  min-content;
+      padding: 15px 0;
    }
    &__cover {
       grid-column: 2;
-      width: 500px;
-      height: 790px;
-
-      background: #084B3E;
-      border-radius: 50px 0px 0px 50px;
+      @media (max-width: 660px) {
+         grid-column: 2;
+         grid-row: 1;
+      }
    }
-   &__form {
+   &__sheet {
       grid-column: 3;
-      width: 660px;
-      height: 790px;
+      @media (max-width: 660px) {
+         grid-column: 2;
+         grid-row: 2;
+      }
+   }
+}
+.cover {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
 
-      background: #FFFFFF;
-      border-radius: 0 50px 50px 0;
+   width: 510px;
+   height: 790px;
+   border-radius: 50px 0px 0px 50px;
+
+   padding: 35px 105px 55px 55px;
+
+   background: #084B3E;
+   @media (max-width: 1200px) {
+      width: 310px;
+      height: 590px;
+      border-radius: 30px 0px 0px 30px;
+
+      padding: 15px 75px 25px 25px;
+   }
+   @media (max-width: 660px) {
+      height: 200px;
+      border-radius: 20px 20px 0 0;
+
+      padding: 15px 25px 25px 25px;
+   }
+   &__logo {
+      width: 170px;
+      img {
+         max-width: 100%;
+      }
    }
    &__txt {
+      width: 350px;
+
       font-family: 'Campton';
       font-style: normal;
       font-weight: 500;
@@ -37,8 +76,214 @@
       letter-spacing: -1px;
 
       color: #F9E2BA;
+      @media (max-width: 1200px) {
+         width: 250px;
+
+         font-size: 22px;
+         line-height: 28px;
+      }
+      @media (max-width: 660px) {
+         font-size: 16px;
+         line-height: 20px;
+      }
+   }
+}
+.sheet {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
+
+   width: 650px;
+   height: 790px;
+   border-radius: 0 50px 50px 0;
+
+   padding: 55px 150px 55px 55px;
+
+   background: #FFFFFF;
+   
+   @media (max-width: 1200px) {
+      width: 450px;
+      height: 590px;
+      border-radius: 0 30px 30px 0;
+
+      padding: 35px 120px 35px 35px;
+   }
+   @media (max-width: 660px) {
+      width: 310px;
+      height: auto;
+      border-radius: 0  0 20px 20px;
+
+      padding: 25px;
+   }
+   &__title {
+      width: 100%;
+      height: 84px;
+
+      font-family: 'Campton';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 42px;
+      /* or 124% */
+
+      letter-spacing: -0.5px;
+
+      /* Black */
+      color: #232323;
+      @media (max-width: 1200px) {
+         height: 64px;
+         font-size: 24px;
+         line-height: 22px;
+      }
+      @media (max-width: 660px) {
+         height: auto;
+         font-size: 18px;
+         line-height: 20px;
+      }
+   }
+   &__txt {
+      //margin-top: 134px;
+      font-family: 'Campton';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+
+      color: #BDBDBD;
+      a {
+         color: #19B07E;
+      }
+      @media (max-width: 1200px) {
+         font-size: 12px;
+      }
    }
 }
 .logo {
+   width: 171.48px;
+   @media (max-width: 1200px) {
+      width: 130px;
 
+   }
+}
+.form {
+   position: relative;
+   width: 100%;
+   @media (max-width: 660px) {
+      margin-top: 2em;
+   }
+   &__items {
+      position: relative;
+
+      margin-bottom: 47px;
+      @media (max-width: 660px) {
+         margin-bottom: 2em;
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 1px;
+         background-color: #343434;
+      }
+      label {
+         //display: inline-block;
+         font-family: 'Campton';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 19px;
+         letter-spacing: 0.206977px;
+
+         color: #343434;
+         @media (max-width: 660px) {
+            font-size: 12px;
+            line-height: 15px;
+         }
+         i {
+            font-family: inherit;
+            font-style: inherit;
+            font-weight: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            letter-spacing: inherit;
+            color: #E33D5F;
+         }
+      }
+      input {
+         display: block;
+
+         width: 100%;
+         
+         font-family: 'Campton';
+         font-style: normal;
+         font-weight: 550;
+         font-size: 16px;
+         line-height: 19px;
+         letter-spacing: 0.206977px;
+
+         color: #343434;
+         //background-color: #F9E2BA;
+      }
+   }
+   &__big-button {
+      width: 100%;
+      height: 76px;
+
+      border-radius: 20px;
+
+      margin-top: 3px;
+
+      font-family: 'Campton';
+      font-style: normal;
+      font-weight: 550;
+      font-size: 20px;
+      line-height: 24px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: -0.5625px;
+
+      color: #FFFFFF;
+      background: #00C38B;
+
+      cursor: pointer;
+      @media (max-width: 1200px) {
+         height: 55px;
+         margin-top: 3em;
+
+         font-size: 16px;
+         line-height: 16px;
+      }
+      @media (max-width: 660px) {
+         height: 35px;
+         margin: 0 0 2em 0;
+      }
+   }
+}
+
+.form-send {
+   position: fixed;
+   top: 0;
+   left: 0;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(42, 119, 76, 0.333);
+   backdrop-filter: blur(12px);
+   -webkit-backdrop-filter: blur(12px);
+   &__Alert {
+      font-size: 32px;
+      ont-family: 'Campton';
+      font-style: normal;
+      font-weight: 550;
+      color: #07b77c;
+   }
 }

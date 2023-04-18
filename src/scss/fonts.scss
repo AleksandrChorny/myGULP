@@ -1,14 +1,56 @@
 @font-face{
-	font-family: Montserrat;
+	font-family: Campton;
 	font-display: swap;
-	src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2"), url("../fonts/Montserrat-VariableFont_wght.woff") format("woff");
+	src: url("../fonts/CamptonBold.woff2") format("woff2"), url("../fonts/CamptonBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+//@font-face{
+//	font-family: CamptonBlack;
+//	font-display: swap;
+//	src: url("../fonts/CamptonBlack.woff2") format("woff2"), url("../fonts/CamptonBlack.woff") format("woff");
+//	font-weight: 400;
+//	font-style: normal;
+//}
+//@font-face{
+//	font-family: CamptonExtraLight;
+//	font-display: swap;
+//	src: url("../fonts/CamptonExtraLight.woff2") format("woff2"), url("../fonts/CamptonExtraLight.woff") format("woff");
+//	font-weight: 400;
+//	font-style: normal;
+//}
+//@font-face{
+//	font-family: CamptonExtraBold;
+//	font-display: swap;
+//	src: url("../fonts/CamptonExtraBold.woff2") format("woff2"), url("../fonts/CamptonExtraBold.woff") format("woff");
+//	font-weight: 400;
+//	font-style: normal;
+//}
+@font-face{
+	font-family: CamptonThin;
+	font-display: swap;
+	src: url("../fonts/CamptonThin.woff2") format("woff2"), url("../fonts/CamptonThin.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face{
-	font-family: CamptonBlack;
+	font-family: Campton;
 	font-display: swap;
-	src: url("../fonts/CamptonBlack.woff2") format("woff2"), url("../fonts/CamptonBlack.woff") format("woff");
+	src: url("../fonts/CamptonLight.woff2") format("woff2"), url("../fonts/CamptonLight.woff") format("woff");
 	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: Campton;
+	font-display: swap;
+	src: url("../fonts/CamptonSemiBold.woff2") format("woff2"), url("../fonts/CamptonSemiBold.woff") format("woff");
+	font-weight: 550;
+	font-style: normal;
+}
+@font-face{
+	font-family: Campton;
+	font-display: swap;
+	src: url("../fonts/CamptonBook.woff2") format("woff2"), url("../fonts/CamptonBook.woff") format("woff");
+	font-weight: 500;
 	font-style: normal;
 }
